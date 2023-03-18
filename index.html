@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Memory Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+<div id="container_app" class="card">
+	<p id="p_game" class="card-footer mb-0">Memory Game</p>
+	<div class="card-body">
+	<div id="container_game">
+		<div class="div_card niezaliczone">
+			<div class="card_front">&nbsp;</div>
+			<div class="card_back">
+				<img src="img/1.png">
+			</div>
+		</div>
+		<div class="div_card niezaliczone">
+			<div class="card_front">&nbsp;</div>
+			<div class="card_back">
+				<img src="img/2.png">
+			</div>
+		</div>
+		<div class="div_card niezaliczone">
+			<div class="card_front">&nbsp;</div>
+			<div class="card_back">
+				<img src="img/1.png">
+			</div>
+		</div>
+		<div class="div_card niezaliczone">
+			<div class="card_front">&nbsp;</div>
+			<div class="card_back">
+				<img src="img/3.png">
+			</div>
+		</div>
+		<div class="div_card niezaliczone">
+			<div class="card_front">&nbsp;</div>
+			<div class="card_back">
+				<img src="img/3.png">
+			</div>
+		</div>
+		<div class="div_card niezaliczone">
+			<div class="card_front">&nbsp;</div>
+			<div class="card_back">
+				<img src="img/2.png">
+			</div>
+		</div>
+		<div class="div_card niezaliczone">
+			<div class="card_front">&nbsp;</div>
+			<div class="card_back">
+				<img src="img/5.png">
+			</div>
+		</div>
+		<div class="div_card niezaliczone">
+			<div class="card_front">&nbsp;</div>
+			<div class="card_back">
+				<img src="img/6.png">
+			</div>
+		</div>
+		<div class="div_card niezaliczone">
+			<div class="card_front">&nbsp;</div>
+			<div class="card_back">
+				<img src="img/6.png">
+			</div>
+		</div>
+		<div class="div_card niezaliczone">
+			<div class="card_front">&nbsp;</div>
+			<div class="card_back">
+				<img src="img/4.png">
+			</div>
+		</div>
+		<div class="div_card niezaliczone">
+			<div class="card_front">&nbsp;</div>
+			<div class="card_back">
+				<img src="img/5.png">
+			</div>
+		</div>
+		<div class="div_card niezaliczone">
+			<div class="card_front">&nbsp;</div>
+			<div class="card_back">
+				<img src="img/4.png">
+			</div>
+		</div>
+	</div>
+		<button id="button_start" class="btn btn-success mt-0">Rozpocznij od Nowa</button>
+	</div>
+	<div class="card-footer">
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#info">Informacje o aplikacji</button>
+		
+	</div>
+</div>
+<div class="modal fade" id="info" tabindex="-1" aria-labelledby="infoinfo" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h1 class="modal-title fs-5" id="infoinfo">Informacje o aplikacji</h1>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+		  <h5 class="mb-2">O aplikacji</h5>
+			Aplikacja wyświetla 12 kart, następnie użykownik odsłania po 2 karty, jeżeli są takie same, aplikacja uznaje to za sukces i blokuje możliwośc ich ponownego wyboru. Gra konczy się gdy użytkownik zgadnie wszystkie 12 kart.
+			<h5 class="mt-2">Technologie</h5>
+			HTML, CSS, JavaScript, Bootstrap
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Zamknij</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+<script type="text/javascript" src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>

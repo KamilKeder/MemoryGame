@@ -1,0 +1,71 @@
+#container_app{
+	width: 450px;
+	margin: auto;
+	text-align: center;
+	border: 1px solid black;
+	margin-top: 10%;
+}
+.div_card{
+	display: none;
+	width: 100px;
+	height: 50px;
+	border: 1px solid black;
+	margin: 10px 0 10px 0;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+.div_card:hover{
+	background: gray;
+	cursor: pointer;
+}
+.obrot{
+	transform: rotateY(-180deg);
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	pointer-events:none
+
+}
+.card_front, .card_back{
+	backface-visibility: hidden;
+	transform: translate(-50%, -50%);
+	height: 100%;
+	width: 100%;
+ 	text-align: center;
+ 	margin-left: 50%;
+ 	position: absolute;
+}
+.card_back{
+	transform: rotateY(180deg);
+	text-align: center;
+ 	margin-left: 0%;
+ 	position: absolute;
+}
+.sukces{
+	border: red;
+	pointer-events:none
+}
+.widzialne{
+	display: inline-block;
+}
+.ukryty{
+	display: none;
+}
+img{
+	aspect-ratio: auto;
+	height: 50px;
+	align-items: center;
+}
+.card_front{
+	text-align: center;
+ 	margin-left: 50%;
+ 	margin-top: 25%;
+ 	position: absolute;
+ 	align-content: center !important;
+ 	align-items: center !important;
+ 	align-self: center !important;
+
+ }
+
+.blokada{
+		pointer-events:none
+}
